@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <title>Pack</title>
+</head>
+
+<body>
+  <nav class="navbar is-danger">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="http://bulma.io">
+
+          <img src="http://bulma.io/images/bulma-logo-white.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
+
+      </a>
+      <div class="navbar-burger burger" data-target="navMenuColordanger-example">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <div id="navMenuColordanger-example" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="#">
+            Home
+          </a>
+        <a class="navbar-item" href="#">
+            Overview
+          </a>
+        <a class="navbar-item" href="#">
+            Modifiers
+          </a>
+        <a class="navbar-item" href="#">
+            Columns
+          </a>
+        <a class="navbar-item" href="#">
+            Layout
+          </a>
+        <a class="navbar-item" href="#">
+            Form
+          </a>
+      </div>
+    </div>
+
+  </nav>
+  <section class="hero is-bold is-medium has-text-centered is-warning">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+        Large title
+      </h1>
+        <h2 class="subtitle">
+        Large subtitle
+      </h2>
+        <button class="button is-danger" data-modal-open="sayHi">Say Hi</button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <div class="modal" data-modal="sayHi">
+    <div class="modal-background" data-modal-close="sayHi"></div>
+    <div class="modal-content box">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, mollitia!
+      <!-- Any other Bulma elements you want -->
+    </div>
+    <button class="modal-close is-large" aria-label="close" data-modal-close="sayHi"></button>
+  </div>
+  <script src="app.bundle.js"></script>
+</body>
+
+</html>
