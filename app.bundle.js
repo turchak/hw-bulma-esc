@@ -106,7 +106,6 @@ function runModal() {
 
   document.addEventListener('keydown', event => {
     if (event.keyCode == 27) {
-      console.log('ee');
       document.querySelector('[data-modal]').classList.remove(activeClass);
     }
   });
