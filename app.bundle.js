@@ -103,7 +103,13 @@ function runModal() {
   // [data-modal]
   const activeClass = 'is-active';
   const arrBottons = document.querySelectorAll('[data-modal-open], [data-modal-close] ');
-  
+
+  document.addEventListener('keydown', event => {
+    if (event.keyCode == 27) {
+      console.log('ee');
+      document.querySelector('[data-modal]').classList.remove(activeClass);
+    }
+  });
   arrBottons.forEach(elem => {
     let key = elem.dataset['modalOpen'] || elem.dataset['modalClose'];
     //add close modal onclick close or some place
@@ -111,11 +117,7 @@ function runModal() {
       document.querySelector('[data-modal=' + key + ']').classList.toggle(activeClass);
     });
     //add close modal on "esc"
-    document.addEventListener('keydown', event => {
-      if (event.keyCode == 27) {
-        document.querySelector('[data-modal=' + key + ']').classList.remove(activeClass);
-      }
-    });
+
   });
 
 
